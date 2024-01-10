@@ -1,0 +1,29 @@
+Clase 6
+
+Websocket (protocolo de comunicación desde el servidor hacia el cliente en tiempo real)
+
+Es un protocolo de comunicacion cliente - servidor. El protocolo http es unidireccional o unilateral, mientras que el websocket es bidireccional o bilateral. 
+En el protocolo http, el cliente inicia la comunicación le hace una petición al servidor, el servidor trata esa petición y luego se la responde al cliente, dando por terminada luego la comunicación. El cliente se quiere volver a comunicar entonces inicia todo el proceso. Si el servidor desea enviarle una información al cliente, tiene que esperar que sea el cliente, como siempre, quien inicie la comunicación y ahí aprovecha para enviarle lo que desea desde el servidor.
+El protocolo websocket, el cliente inicia la comunicación, aunque a partir de ahí el servidor puede enviar la información que desee. Websocket establece 2 endpoints de comunicación, a cada endpoint se le conoce como socket. 
+Ya sea el protocolo http o websocket, en ambos casos, se necesita que el cliente inicie la comunicación.
+
+Socket.io es un módulo externo que se utiliza para implementar websocket
+
+npm init -y
+npm install express
+npm install express-handlebars
+npm install socket.io
+
+Sweet Alert
+Toastifie
+Deploy
+
+Se crea el formulario chat.handlebars y chat.js
+Utilizamos Glitch para realizar el despliegue del chat.
+En el package.json el script start nodemon es solo para desarrollo entonces debemos cambiar esa palabra por node para poder así desplegarlo mediante Glitch.
+Tambien en el mismo package.json deberíamos especificar con que versión de node estuvimos trabajando de forma tal que podamos así preveer posibles errores. Para saber con que versión de node estoy trabajando hago node -v desde la terminal de VSC.
+
+
+
+
+
